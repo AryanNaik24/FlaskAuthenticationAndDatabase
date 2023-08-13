@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}SignUp{% endblock %}
+{% block content %}
+<div class="sgnup">
+    <h2 align="center" class="event-title">Sign Up</h2>
+    <form class="formtext" method="POST">
+        <div class="form-group">
+            <h5 class="event-input-title">Username:</h5>
+            <input type="text" class="form-control event-input" name="name" id="name" placeholder="Enter Username">
+        </div>
+        <div class="form-group">
+            <h5 class="event-input-title">Email:</h5>
+            <input type="email" class="form-control event-input" name="email" id="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <h5 class="event-input-title">Password:</h5>
+            <input type="password" class="form-control event-input" name="password1" id="password1" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+            <h5 class="event-input-title">Confirm password:</h5>
+            <input type="password" class="form-control event-input" name="password2" id="password2" placeholder="Confirm Password">
+        </div>
+        <br/>
+        <div class="submit">
+        <button type="submit" class="btn btn-primary ">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+</form>
+
+{% endblock %}
